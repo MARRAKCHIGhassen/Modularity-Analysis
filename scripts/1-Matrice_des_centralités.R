@@ -258,6 +258,7 @@ restantes_mat <- function(graphe, name){
                               pagerank, 
                               harmonic, 
                               constraint,
+                              authority,
                               hub)
   
   
