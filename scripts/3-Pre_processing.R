@@ -33,7 +33,6 @@
 ###############
 # Configuration
 ###############
-library(igraph)
 library(caTools)
 set.seed(123)
 setwd("P:/Projets/4-CS-Modularity-Analysis")
@@ -279,7 +278,7 @@ normalisation <- function(df) {
   # Récupération des features
   features <- names(df)
   features <- features[!(features %in% c("degree", "coreness", "label"))]
-  print(features)
+  
   # Normalisation
   df[, features] <- scale(df[, features])
   
